@@ -14,7 +14,7 @@ const Index = () => {
   const handleCreateGame = (e) => {
     e.preventDefault();
 
-    const newSessionId = "";
+    const newSessionId = Math.random().toString(36).substring(7);
     navigate("/lobby", { state: { gameName, rounds, timePerTurn, wordsPerPlayer, sessionId: newSessionId } });
   };
 

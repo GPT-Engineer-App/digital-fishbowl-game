@@ -13,7 +13,7 @@ const Lobby = () => {
       <p className="mb-2">Number of Rounds: {rounds}</p>
       <p className="mb-2">Time per Turn: {timePerTurn} seconds</p>
       <p className="mb-2">Words per Player: {wordsPerPlayer}</p>
-      {}
+      <p className="mb-2">Session ID: {sessionId}</p>
     </div>
   );
 };
